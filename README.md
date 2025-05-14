@@ -16,21 +16,28 @@ A lightweight, fast placeholder image generator server built with Node.js. Gener
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/placeholdersvg.git
-cd placeholdersvg
+git clone https://github.com/netologist/placebo.git
+cd placebo
 
 # Run the server
 node placeholder-server.js
 ```
 
-### Option 2: Run with Docker
+### Option 2: Build & Run with Docker
 
 ```bash
 # Build the Docker image
-docker build -t placeholdersvg .
+docker build -t placebo .
 
 # Run the container
-docker run -p 3000:3000 placeholdersvg
+docker run -p 3000:3000 placebo
+```
+
+### Option 3: Run with Docker
+
+```bash
+# Run the container from registry
+docker run run -p 3000:3000 ghcr.io/netologist/placebo:latest
 ```
 
 The server will be available at http://localhost:3000
@@ -70,7 +77,7 @@ http://localhost:3000/placeholder/1200/300?bg=0078D7
 
 ## Implementation Details
 
-PlaceholderSVG generates SVG images on demand using Node.js's built-in HTTP server. The implementation:
+Placebo generates SVG images on demand using Node.js's built-in HTTP server. The implementation:
 
 - Sanitizes all input parameters to prevent injection attacks
 - Implements sensible defaults and boundaries for dimensions
