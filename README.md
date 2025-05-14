@@ -2,6 +2,8 @@
 
 A lightweight, fast placeholder image generator server built with Node.js. Generate customizable SVG placeholders on the fly for your web projects.
 
+If you need to client-side solution, I strongly recommend [holder.js](https://holderjs.com/).
+
 ## Features
 
 - **Fast & Lightweight**: Generates SVG placeholders with minimal overhead
